@@ -8,4 +8,4 @@ Description: a utility that converts bitmap to vector graphics
 Version: @VERSION@
 Requires:
 Libs: -L@libdir@ -lautotrace @LIBPNG_LIBS@ @MAGICK_LIBS@ @LIBSWF_LIBS@ @LIBPSTOEDIT_LIBS@ @GLIB2_LIBS@
-Cflags: -I@includedir@ @MAGICK_CFLAGS@ @LIBPSTOEDIT_CFLAGS@ @GLIB2_CFLAGS@
+Cflags: -m32 -I@includedir@ @MAGICK_CFLAGS@ @LIBPSTOEDIT_CFLAGS@ @GLIB2_CFLAGS@

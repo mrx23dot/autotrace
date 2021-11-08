@@ -19,8 +19,8 @@ if [ "$ID_LIKE" = ubuntu -o "$ID_LIKE" = debian -o "$_system_name" = Ubuntu ]; t
   echo "Ubuntu Version: using checkinstall and dpkg"
   (cd deb && sh ./dist.sh $PKG_NAME $PKG_VER) || exit 1
   echo "****************************************************************"
-  echo "Win64 Version: using x86_64-w64-mingw32 cross toolchain"
-  (cd win && sh ./dist.sh $PKG_NAME $PKG_VER)
+  echo "Win32 Version: using x86_64-w64-mingw32 cross toolchain"
+  (cd win32 && sh ./dist.sh $PKG_NAME $PKG_VER)
 elif [ "$(uname)" = Darwin ]; then
   echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
   echo "MacOS Version: using zip"
